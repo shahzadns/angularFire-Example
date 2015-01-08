@@ -1,4 +1,3 @@
-angularFire
-===========
+angularFire-Example
 
-A demo project consists basics of Angular + firebase , that makes Real-Time Application through three-way data-binding.
+A Sample project creates Real-Time Web Application with AngularJS + firebase , that makes three-way data-binding.
