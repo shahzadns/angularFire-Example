@@ -1,0 +1,14 @@
+<div class="box">
+    <div data-ng-show="currentUser">
+        <p>Please log out from <strong data-ng-bind="currentUser.uid"></strong>, to sign up for a new account.</p>
+    </div>
+    <div data-ng-hide="currentUser">
+        <h5>Sign Up</h5>
+        <form id="loginForm" data-ng-submit="getSignup()">
+            <input type="text" name="email" placeholder="email" required data-ng-model="signup.email" />
+            <input type="password" name="password" placeholder="password" required data-ng-model="signup.password" />
+            <input type="submit" value="SIGN UP"/>
+        </form>
+        <p data-ng-bind="signupError"></p>
+    </div>
+</div>

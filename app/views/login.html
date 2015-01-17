@@ -1,0 +1,14 @@
+<div class="box">
+    <div data-ng-show="currentUser">
+        <p>User is already logged in as <strong data-ng-bind="currentUser.uid"></strong></p>
+    </div>
+    <div data-ng-hide="currentUser">
+        <h5>Please Login to access your records</h5>
+        <form id="loginForm" data-ng-submit="getLogin()">
+            <input type="text" name="email" required placeholder="email" data-ng-model="login.email"/>
+            <input type="password" name="password" required placeholder="password" data-ng-model="login.password"/>
+            <input type="submit" value="LOGIN"/>
+        </form>
+        <p data-ng-bind="logginError"></p>
+    </div>
+</div>

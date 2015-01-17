@@ -1,0 +1,27 @@
+.container{
+    height: 200px;
+}
+.lt_green{
+    background-color: #0EB8A8;
+}
+.green{
+    background-color: #009688;
+}
+.pink{
+    background-color: #9c27b0;
+}
+.purple{
+    background-color: #3949ab;
+}
+[layout] > div:nth-child(1){
+    background-color: #009688;
+}
+[layout] > div:nth-child(2){
+    background-color: #9c27b0;
+}
+[layout] > div:nth-child(3){
+    background-color: #3949ab;
+}
+.box{
+    width : 350px;
+}

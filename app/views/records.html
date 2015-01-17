@@ -1,0 +1,26 @@
+<div>
+    <form>
+        <input type="text" id="message" placeholder="Message" data-ng-model="record.title" data-ng-keydown="$event.keyCode == 13 && (editState ? updateRecord() : addRecord());"/>
+        <input type="button" id="submit" value="ADD" data-ng-click="editState ? updateRecord() : addRecord();"/>
+    </form>
+</div>
+<h3>Records</h3>
+<table cellpadding="0" cellspacing="0">
+    <thead>
+    <tr>
+        <th>Record</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr data-ng-repeat="(key, record) in records">
+        <td>
+            <span data-ng-bind="record.title"></span>
+        </td>
+        <td>
+            <button data-ng-click="editRecord(key, record)">EDIT</button>
+            <button data-ng-click="removeRecord(key)">DELETE</button>
+        </td>
+    </tr>
+    </tbody>
+</table>

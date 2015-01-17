@@ -1,0 +1,11 @@
+<div class="box">
+    <div data-ng-show="isLoggedIn">
+        <h3>Welcome {{isLoggedIn.uid}}</h3>
+        <h4>This is home page</h4>
+        <div data-ng-controller="recordsCtrl" data-ng-include="'./app/views/records.html'">
+        </div>
+    </div>
+    <div data-ng-hide="isLoggedIn">
+        <p>Please log in to see your dashboard.</p>
+    </div>
+</div>

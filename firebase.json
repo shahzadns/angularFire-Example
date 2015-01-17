@@ -1,0 +1,9 @@
+{
+  "firebase": "shezi-angularfire",
+  "public": "C:\\Users\\Zeeshan\\WebstormProjects\\firebase",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
